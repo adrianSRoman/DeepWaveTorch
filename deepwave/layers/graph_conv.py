@@ -65,7 +65,7 @@ class ChebConv(torch.nn.Module):
             std = math.sqrt(2 / (self.in_channels * self.kernel_size))
             self.weight.data.normal_(0, std)
         else:
-            self.weight = weight
+            self.weight = torch.nn.Parameter(weight)
 
         if bias:
             self.bias = torch.nn.Parameter(torch.DoubleTensor(out_channels))
@@ -110,6 +110,7 @@ class SphericalChebConv(torch.nn.Module):
         self.register_buffer("laplacian", lap)
         self.chebconv = ChebConv(in_channels, out_channels, kernel_size, weight)
 
+    '''
     def state_dict(self, *args, **kwargs):
         """! WARNING !
         This function overrides the state dict in order to be able to save the model.
@@ -123,6 +124,7 @@ class SphericalChebConv(torch.nn.Module):
         for key in del_keys:
             del state_dict[key]
         return state_dict
+    '''
 
     def forward(self, x):
         """Forward pass.

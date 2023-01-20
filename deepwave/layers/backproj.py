@@ -21,8 +21,8 @@ class BackProjLayer(torch.nn.Module):
             self.D = torch.nn.Parameter(torch.empty((Nch, Npx), dtype=torch.complex128))
             self.reset_parameters()
         else:
-            self.tau = tau
-            self.D = D
+            self.tau = torch.nn.Parameter(tau)
+            self.D = torch.nn.Parameter(D)
             
 
     def reset_parameters(self):
