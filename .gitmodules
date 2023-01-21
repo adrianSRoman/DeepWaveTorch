@@ -1,0 +1,6 @@
+[submodule "modules/DeepWave"]
+	path = modules/DeepWave
+	url = https://github.com/imagingofthings/DeepWave.git
+[submodule "modules/ImoT_tools"]
+	path = modules/ImoT_tools
+	url = https://github.com/imagingofthings/ImoT_tools.git
