@@ -39,7 +39,7 @@ python3 -m venv /path/to/your_new_venv
 
 Start `your_new_venv`
 ```
-source /path/to/your_new_venv/bin/activate
+source /path/to/<your_new_venv>/bin/activate
 ```
 
 If the `modules` subdirectories ar empty execute:
@@ -70,6 +70,29 @@ git clone git@github.com:adrianSRoman/DeepWaveTorch.git
 cd path/to/DeepWaveTorch
 python3 setup.py develop
 ```
+
+### Executing example `notebooks`
+
+- Start `your_new_venv`
+```
+source /path/to/<your_new_venv>/bin/activate
+```
+
+- Create a Jupyter Kernel to contain your required packages (first time setup only)
+```
+pip install ipykernel
+ipython kernel install --user --name=<your_new_kernel_name>
+```
+
+- Start Jupyter
+
+```
+jupyter notebook
+```
+
+- Select a given notebook you want to work with
+- Select `your_new_kernel_name` under: Kernel > Change kernel > `your_new_kernel_name`
+
 
 
 
