@@ -29,7 +29,53 @@ conv0 <- SphericalChebConv(conv1) + y
 I_out <- ReTanh(conv0)
 ```
 
-TODO:
-* add `setup.py` to be able to `pip install -e .`
-* link to colab notebook with inference examples on LOCATA, FRIDA, and DCASE 2022
-* add examples that qualitatively show that this implementation is the same as the original
+### Installation
+
+#### First time setup
+
+Clone this repo
+```
+git clone https://github.com/adrianSRoman/DeepWaveTorch.git
+```
+
+Create a Python virtual environment
+```
+python3 -m venv /path/to/your_new_venv
+```
+
+Start `your_new_venv`
+```
+source /path/to/your_new_venv/bin/activate
+```
+
+If the `modules` subdirectories ar empty execute:
+```
+git submodule update --init --recursive
+```
+
+#### Installing dependencies (order matters)
+
+- Install `ImoT_tools`: plotting library used to nicely visualize DeepWave's output
+```
+git clone git@github.com:imagingofthings/ImoT_tools.git
+cd path/to/ImoT_tools
+pip install -r requirements.txt
+python3 setup.py develop
+```
+
+- Install `DeepWave`: original DeepWave NumPy implementation. Used for benchmarking against the PyTorch implementation. Data loaders are also re-used from the original implementation. 
+```
+git clone git@github.com:imagingofthings/DeepWave.git
+cd path/to/DeepWave
+python3 setup.py develop
+```
+
+- Install `DeepWaveTorch`: new DeepWave PyTorch implementation (this repo!).
+```
+git clone git@github.com:adrianSRoman/DeepWaveTorch.git    
+cd path/to/DeepWaveTorch
+python3 setup.py develop
+```
+
+
+
