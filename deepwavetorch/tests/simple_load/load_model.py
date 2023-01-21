@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 
-from deepwave.models.deepwave import DeepWave
+from deepwavetorch.models.deepwave import DeepWave
 
 N_px = 2234
 R = np.load("./grid.npy")
