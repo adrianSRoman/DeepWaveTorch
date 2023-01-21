@@ -1,10 +1,10 @@
 import torch
 from torch import nn
 
-from deepwave.layers.backproj import BackProjLayer
-from deepwave.layers.graph_conv import SphericalChebConv
-from deepwave.utils.activations import ReTanh
-from deepwave.utils.laplacian import laplacian_exp
+from deepwavetorch.layers.backproj import BackProjLayer
+from deepwavetorch.layers.graph_conv import SphericalChebConv
+from deepwavetorch.utils.activations import ReTanh
+from deepwavetorch.utils.laplacian import laplacian_exp
 
 class DeepWave(torch.nn.Module):
     """DeepWave: real-time recurrent neural network for acoustic imaging.
