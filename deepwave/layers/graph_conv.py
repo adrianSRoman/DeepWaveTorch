@@ -2,7 +2,6 @@
 PyTorch implementation inspired from: https://github.com/deepsphere/deepsphere-pytorch/blob/master/deepsphere/layers/chebyshev.py
 Based upon NumPy implementation from: https://github.com/imagingofthings/DeepWave
 """
-# pylint: disable=W0221
 
 import math
 
