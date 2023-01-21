@@ -32,12 +32,6 @@ I_out <- ReTanh(conv0)
 ### Installation
 
 #### First time setup
-
-Clone this repo
-```
-git clone https://github.com/adrianSRoman/DeepWaveTorch.git
-```
-
 Create a Python virtual environment
 ```
 python3 -m venv /path/to/your_new_venv
