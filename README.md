@@ -1,7 +1,7 @@
 ## DeepWave: A Recurrent Neural-Network for Real-Time Acoustic Imaging (PyTorch)
 
 
-This repository contains a pytorch implementation of the DeepWave model originally published at Neurips 2019
+This repository contains a PyTorch implementation of the DeepWave model originally published at Neurips 2019
 
 | [paper](https://proceedings.neurips.cc/paper/2019/file/e9bf14a419d77534105016f5ec122d62-Paper.pdf) | [original code](https://github.com/imagingofthings/DeepWave) |
 
@@ -40,11 +40,6 @@ python3 -m venv /path/to/your_new_venv
 Start `your_new_venv`
 ```
 source /path/to/<your_new_venv>/bin/activate
-```
-
-If the `modules` subdirectories ar empty execute:
-```
-git submodule update --init --recursive
 ```
 
 #### Installing dependencies (order matters)
@@ -92,6 +87,14 @@ jupyter notebook
 
 - Select a given notebook you want to work with
 - Select `your_new_kernel_name` under: Kernel > Change kernel > `your_new_kernel_name`
+
+
+### Qualitative and quantitative against the original DeepWave implementation
+
+#### Qualitatively, the implementation from this repository generates the same intensity fields as the original NumPy implementation.
+
+##### Inferred intensity field for a single frequency band: DeepWave original (NumPy) Vs. DeepWave PyTorch
+![alt text](https://github.com/adrianSRoman/DeepWaveTorch/blob/master/figures/DeepWave_fields_comparison.png)
 
 
 
