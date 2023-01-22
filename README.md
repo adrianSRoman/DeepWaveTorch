@@ -89,12 +89,15 @@ jupyter notebook
 - Select `your_new_kernel_name` under: Kernel > Change kernel > `your_new_kernel_name`
 
 
-### Qualitative and quantitative against the original DeepWave implementation
+### Qualitative and quantitative comparison against the original DeepWave implementation
 
 #### Qualitatively, the implementation from this repository generates the same intensity fields as the original NumPy implementation.
 
 ##### Inferred intensity field for a single frequency band: DeepWave original (NumPy) Vs. DeepWave PyTorch
-![alt text](https://github.com/adrianSRoman/DeepWaveTorch/blob/master/figures/DeepWave_fields_comparison.png)
+
+<p align="center" width="100%">
+    <img width="33%" src="https://github.com/adrianSRoman/DeepWaveTorch/blob/master/figures/DeepWave_fields_comparison.png">
+</p>
 
 
 
