@@ -1,15 +1,15 @@
 ## DeepWave: A Recurrent Neural-Network for Real-Time Acoustic Imaging (PyTorch)
 
-Get started with inference
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adrianSRoman/DeepWaveTorch/notebooks/inference_quickstart.ipynb]
-
 This repository contains a PyTorch implementation of the DeepWave model originally published at Neurips 2019
 
 | [paper](https://proceedings.neurips.cc/paper/2019/file/e9bf14a419d77534105016f5ec122d62-Paper.pdf) | [original code](https://github.com/imagingofthings/DeepWave) |
 
-This is work in progress!
+Get started with inference
 
-Main building blocks:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adrianSRoman/DeepWaveTorch/notebooks/inference_quickstart.ipynb)
+
+## Main building blocks:
+
 - SphericalChebConv: Spherical Chebyshev graph convolutions
 - BackProjLayer: project correlation matrix into image form (intensity map form)
 - ReTanh: Rectified hyperbolic tangent action function 
