@@ -1,5 +1,7 @@
 ## DeepWave: A Recurrent Neural-Network for Real-Time Acoustic Imaging (PyTorch)
 
+Get started with inference
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adrianSRoman/DeepWaveTorch/notebooks/inference_quickstart.ipynb]
 
 This repository contains a PyTorch implementation of the DeepWave model originally published at Neurips 2019
 
@@ -100,5 +102,19 @@ jupyter notebook
 </p>
 
 
+### YouTube presentation
+
+[![Mexico LatAm BISH Bash: DeepWave](https://img.youtube.com/vi/ZO5jfqY_NwA/0.jpg)](https://www.youtube.com/watch?v=ZO5jfqY_NwA)
 
 
+## License
+Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
