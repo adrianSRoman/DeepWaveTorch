@@ -6,7 +6,7 @@ This repository contains a PyTorch implementation of the DeepWave model original
 
 Get started with inference
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adrianSRoman/DeepWaveTorch/notebooks/inference_quickstart.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1BC72KmoAyeydS0X7Dti3fFxzLAxfbdWC?usp=sharing)
 
 ## Main building blocks:
 
