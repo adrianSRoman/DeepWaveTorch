@@ -44,7 +44,6 @@ Start `your_new_venv`
 source /path/to/<your_new_venv>/bin/activate
 ```
 
-#### Install 
 - Clone `DeepWaveTorch` (this repo!).
 ```
 git clone git@github.com:adrianSRoman/DeepWaveTorch.git 
@@ -71,6 +70,7 @@ python3 setup.py develop
 - Start `DeepWaveTorch`: new DeepWave PyTorch implementation.
 ```   
 cd DeepWaveTorch
+pip install -r requirements.txt
 python3 setup.py develop
 ```
 
