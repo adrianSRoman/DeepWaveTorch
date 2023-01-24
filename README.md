@@ -31,7 +31,7 @@ conv0 <- SphericalChebConv(conv1) + y
 I_out <- ReTanh(conv0)
 ```
 
-### Installation
+## Installation
 
 #### First time setup
 Create a Python virtual environment
@@ -54,7 +54,7 @@ pip install -r requirements.txt
 python3 setup.py develop
 ```
 
-- Install `DeepWave`: original DeepWave NumPy implementation. Used for benchmarking against the PyTorch implementation. Data loaders are also re-used from the original implementation. 
+- Install `DeepWave`: original DeepWave implementation. Used for benchmarking against the PyTorch implementation. Data loaders are also re-used from the original implementation. 
 ```
 git clone git@github.com:imagingofthings/DeepWave.git
 cd path/to/DeepWave
@@ -91,18 +91,18 @@ jupyter notebook
 - Select `your_new_kernel_name` under: Kernel > Change kernel > `your_new_kernel_name`
 
 
-### Qualitative and quantitative comparison against the original DeepWave implementation
+## Qualitative and quantitative comparison against the original DeepWave implementation
 
-#### Qualitatively, the implementation from this repository generates the same intensity fields as the original NumPy implementation.
+#### Qualitatively, the implementation from this repository generates the same intensity fields as the original DeepWave implementation.
 
-##### Inferred intensity field for a single frequency band: DeepWave original (NumPy) Vs. DeepWave PyTorch
+##### Inferred intensity field for a single frequency band: DeepWave original Vs. DeepWave PyTorch
 
 <p align="center" width="100%">
-    <img width="33%" src="https://github.com/adrianSRoman/DeepWaveTorch/blob/master/figures/DeepWave_fields_comparison.png">
+    <img width="60%" src="https://github.com/adrianSRoman/DeepWaveTorch/blob/master/figures/DeepWave_fields_comparison.png">
 </p>
 
 
-### YouTube presentation
+## YouTube presentation
 
 [![Mexico LatAm BISH Bash: DeepWave](https://img.youtube.com/vi/ZO5jfqY_NwA/0.jpg)](https://www.youtube.com/watch?v=ZO5jfqY_NwA)
 
