@@ -44,27 +44,33 @@ Start `your_new_venv`
 source /path/to/<your_new_venv>/bin/activate
 ```
 
-#### Installing dependencies (order matters)
-
-- Install `ImoT_tools`: plotting library used to nicely visualize DeepWave's output
+#### Install 
+- Clone `DeepWaveTorch` (this repo!).
 ```
-git clone git@github.com:imagingofthings/ImoT_tools.git
-cd path/to/ImoT_tools
+git clone git@github.com:adrianSRoman/DeepWaveTorch.git 
+```
+
+- Initialize submodules
+```
+git submodule init
+```
+
+- Start `ImoT_tools`: plotting library used to nicely visualize DeepWave's output
+```
+cd ImoT_tools
 pip install -r requirements.txt
 python3 setup.py develop
 ```
 
-- Install `DeepWave`: original DeepWave implementation. Used for benchmarking against the PyTorch implementation. Data loaders are also re-used from the original implementation. 
+- Start `DeepWave`: original DeepWave implementation. Used for benchmarking against the PyTorch implementation. Data loaders are also re-used from the original implementation. 
 ```
-git clone git@github.com:imagingofthings/DeepWave.git
-cd path/to/DeepWave
+cd DeepWave
 python3 setup.py develop
 ```
 
-- Install `DeepWaveTorch`: new DeepWave PyTorch implementation (this repo!).
-```
-git clone git@github.com:adrianSRoman/DeepWaveTorch.git    
-cd path/to/DeepWaveTorch
+- Start `DeepWaveTorch`: new DeepWave PyTorch implementation.
+```   
+cd DeepWaveTorch
 python3 setup.py develop
 ```
 
