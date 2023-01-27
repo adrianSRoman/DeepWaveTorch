@@ -31,6 +31,8 @@ conv0 <- SphericalChebConv(conv1) + y
 I_out <- ReTanh(conv0)
 ```
 
+Many of the operations used in this implementation were borrowed from the repository [deepsphere-pytorch](https://github.com/deepsphere/deepsphere-pytorch).
+
 ## Installation
 
 #### First time setup
