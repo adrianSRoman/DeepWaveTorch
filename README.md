@@ -4,10 +4,6 @@ This repository contains a PyTorch implementation of the DeepWave model original
 
 | [paper](https://proceedings.neurips.cc/paper/2019/file/e9bf14a419d77534105016f5ec122d62-Paper.pdf) | [original code](https://github.com/imagingofthings/DeepWave) |
 
-Get started with inference
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1BC72KmoAyeydS0X7Dti3fFxzLAxfbdWC?usp=sharing)
-
 ## Main building blocks:
 
 - SphericalChebConv: Spherical Chebyshev graph convolutions
@@ -17,7 +13,7 @@ Get started with inference
 
 DeepWave (PyTorch) architecture:
 ```
-Deepwave: input=S, trainable={mu, D, tau}
+Deepwave: input=S (visibility matrix), trainable={mu, D, tau}
     y <- BackProjLayer(S) 
 conv4 <- SphericalChebConv(I_init) + y
 conv4 <- ReTanh(conv4)
@@ -98,6 +94,19 @@ jupyter notebook
 - Select a given notebook you want to work with
 - Select `your_new_kernel_name` under: Kernel > Change kernel > `your_new_kernel_name`
 
+## Extracting visibility matrices (DeepWave's input)
+
+Extracting visibility matrices `S` is perhaps the main aspect you will need because they are DeepWave's input! To save you some time we created a simple notebook that for a given audio track of M microphones and N samples (we use an eigenmike32), it generates a visibility matrix (MxM) over 100 msec audio frames. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1BC72KmoAyeydS0X7Dti3fFxzLAxfbdWC?usp=sharing)
+
+Note: the data extraction for the experiments in this repo (including extracting visibility matrices) was done using the `run.sh` files from the original DeepWave code [see example run.sh](https://github.com/imagingofthings/DeepWave/blob/master/datasets/FRIDA/run.sh). The `run.sh` files perform three tasks: 
+
+(1) Extract data from a mic array of N channels to generate visibility matrices `S` (this is what DeepWave takes as input). Extract a ground truth intensity field `I` which DeepWave learns how to generate. The script will then generate a `.npz` file.
+
+(2) Merge datasets in single `.npz` files for the 9 different extracted frequency bands across all tracks.
+
+(3) Train the original DeepWave model. After training is done, you will find `.npz` files containing the trained weights of the model for each frequency band.
+
+Overall, you can either use the colab notebook to extract visibility matrices, or execute the `run.sh` scripts from the original DeepWave repo (you choose).
 
 ## Qualitative and quantitative comparison against the original DeepWave implementation
 
