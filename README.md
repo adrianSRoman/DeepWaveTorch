@@ -1,6 +1,6 @@
 ## DeepWave: A Recurrent Neural-Network for Real-Time Acoustic Imaging (PyTorch)
 
-<img src="https://github.com/adrianSRoman/DeepWaveTorch/blob/master/figures/task4_recording1.gif" width="900" height="320"/>
+<img src="https://github.com/adrianSRoman/DeepWaveTorch/blob/master/figures/task4_recording1.gif" width="900" height="280"/>
 
 This repository contains a PyTorch implementation of the DeepWave model originally published at NeurIPS 2019
 
